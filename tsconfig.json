@@ -21,6 +21,9 @@
       "dom"
     ]
   },
+  "include": [
+    "vendor/index.d.ts"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
