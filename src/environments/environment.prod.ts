@@ -6,5 +6,6 @@ export const environment : Environment = {
     host: '',
     username: '',
     password: ''
-  }
+  },
+  ledDevices: []
 };
