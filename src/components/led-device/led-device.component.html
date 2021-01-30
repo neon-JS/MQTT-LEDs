@@ -1,0 +1,17 @@
+<div class="card">
+    <form>
+        <h3>{{ device.name }}</h3>
+        <app-select [options]="device.effects" [firstAsDefault]="false" (value)="updateEffect($event.identifier)"
+            nameAttribute="name" label="Effekte"></app-select>
+        <app-slider [initial]="0" [min]="0" [max]="100" (value)="updateBrightness($event)" label="Helligkeit">
+        </app-slider>
+        <div class="row">
+            <div class="col">
+                <app-toggle (value)="updateStatus($event)" label="Aktiv"></app-toggle>
+            </div>
+            <div class="col">
+                <app-colorpicker (value)="updateColor($event)" color="#000000" label="Farbe"></app-colorpicker>
+            </div>
+        </div>
+    </form>
+</div>

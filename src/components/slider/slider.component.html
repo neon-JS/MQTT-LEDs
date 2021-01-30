@@ -1,0 +1,5 @@
+<div class="form-group">
+	<label for="range-component" class="form-label">{{ label }}</label>
+	<input type="range" [min]="min" [max]="max" (change)="submitValue($event)" [value]="this.initial"
+		class="form-range form-control" name="range-component">
+</div>

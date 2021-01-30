@@ -1,0 +1,5 @@
+<div class="form-group">
+	<input [value]="this.color[0] === '#' ? this.color : '#' + this.color" (change)="submitValue($event)" type="color"
+		class="colorpicker form-control" name="colorpicker-component">
+	<label for="colorpicker-component" class="form-label">{{ label }}</label>
+</div>

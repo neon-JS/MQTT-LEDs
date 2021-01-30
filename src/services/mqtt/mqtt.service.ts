@@ -26,7 +26,7 @@ export class MqttService implements OnDestroy {
 
   public publish(topic: string, payload: string, qos: QoS = 0) {
     this.getClient().publish(
-      topic, 
+      topic,
       payload,
       { qos },
       (error) => {
@@ -50,7 +50,6 @@ export class MqttService implements OnDestroy {
           throw new Error('Topic not granted by server!');
         }
       }
-    
     );
 
     return this.newMessage$
@@ -63,8 +62,7 @@ export class MqttService implements OnDestroy {
    * Use this method rather than accessing the property directly as this allows us to lazy-load the client
    * instead of connecting in the constructor which may not be necessary at all!
    */
-  private getClient(): MqttClient
-  {
+  private getClient(): MqttClient {
     if (!this.client) {
       this.client = mqtt.connect(environment.mqtt.host, { username: environment.mqtt.username, password: environment.mqtt.password });
     }

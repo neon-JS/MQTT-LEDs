@@ -1,0 +1,9 @@
+<div class="form-group">
+    <label for="select-component" class="form-label">{{ label }}</label>
+    <select [(ngModel)]="selectedValue" (change)="update()" class="form-select form-select-sm form-control"
+        name="select-component">
+        <option *ngFor="let option of options" [ngValue]="option">{{ nameAttribute ? option[nameAttribute] : option }}
+        </option>
+        <option *ngIf="options.length === 0" selected disabled>-</option>
+    </select>
+</div>

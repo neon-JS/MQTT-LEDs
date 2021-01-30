@@ -1,0 +1,15 @@
+form {
+    padding: 10px;
+
+    h3, app-select, app-slider {
+        margin-bottom: 5%;
+        width: 100%;
+        display: block;
+    }
+
+    app-toggle {
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+}

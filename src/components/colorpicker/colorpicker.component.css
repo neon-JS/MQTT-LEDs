@@ -1,0 +1,12 @@
+input[type="color"].colorpicker {
+  padding: 0;
+  border: none;
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+label {
+  padding: 10px;
+}

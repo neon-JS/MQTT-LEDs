@@ -13,7 +13,7 @@ interface LedControlTopics {
     color: string;          // e.g. /color with payload being some RGB-value (e.g. "ff00ff")
     effect: string;         // e.g. /effect with payload being efect-identifier (e.g. "flashing")
     brightness: string;     // e.g. /brightness payload being a value between 0 - 100
-    status: string;         // e.g. /status with payload being "on" of "off"
+    status: string;         // e.g. /status with payload being "on" or "off"
 }
 
 export interface LedDevice {
@@ -26,5 +26,5 @@ export interface LedDevice {
 export interface Environment {
     production: boolean;
     mqtt: MqttConfig;
-    ledDevices: Array<LedDevice>
+    ledDevices: Array<LedDevice>;
 } 

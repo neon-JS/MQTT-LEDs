@@ -1,6 +1,6 @@
-import { Environment } from "../models/Environment";
+import { Environment } from '../models/Environment';
 
-export const environment : Environment = {
+export const environment: Environment = {
   production: false,
   mqtt: {
     host: '',
