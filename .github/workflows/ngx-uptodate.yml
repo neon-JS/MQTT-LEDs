@@ -1,0 +1,15 @@
+name: "Update Angular Action"
+on:
+  schedule:
+    - cron: '0 0 * * 6'
+
+jobs:
+  ngxUptodate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Updating ng dependencies
+        uses: tinesoft/ngx-uptodate@master
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-branch-prefix: chore/ng-update/
+          pr-title: 'chore (by ng-update): Update Angular dependencies'
