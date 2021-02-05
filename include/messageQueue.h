@@ -8,7 +8,6 @@ struct MessageNode
 {
     Message *message;
     MessageNode *next;
-    MessageNode *previous;
 };
 
 struct MessageQueue
@@ -16,10 +15,6 @@ struct MessageQueue
     MessageNode *start;
     MessageNode *end;
 };
-
-void communicationLoop();
-void communicationInitialize();
-Message *communicationGetNextMessage();
 
 void freeMessage(Message *);
 

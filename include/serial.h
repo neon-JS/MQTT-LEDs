@@ -1,4 +1,4 @@
-#include <communicator.h>
+#include <communication.h>
 
 #define SERIAL_BUFFER_LENGTH 64
 

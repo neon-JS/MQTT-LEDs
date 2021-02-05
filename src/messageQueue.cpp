@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <communicator.h>
+#include <communication.h>
 
 void freeMessage(Message *message)
 {
@@ -20,7 +20,6 @@ void messageQueuePush(MessageQueue *queue, Message *message)
 {
     MessageNode *node = (MessageNode *)malloc(sizeof(MessageNode));
     node->next = NULL;
-    node->previous = NULL;
 
     node->message = message;
 
