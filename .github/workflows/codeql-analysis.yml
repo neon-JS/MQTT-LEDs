@@ -10,6 +10,9 @@ on:
 
 jobs:
   analyze:
+    defaults:
+      run:
+        working-directory: /frontend/
     name: Analyze
     runs-on: ubuntu-latest
 

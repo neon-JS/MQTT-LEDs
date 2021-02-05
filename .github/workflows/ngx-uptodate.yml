@@ -6,6 +6,9 @@ on:
 jobs:
   ngxUptodate:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: /frontend/
     steps:
       - name: Updating ng dependencies
         uses: tinesoft/ngx-uptodate@master
