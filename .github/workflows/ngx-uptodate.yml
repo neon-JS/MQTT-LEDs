@@ -11,7 +11,7 @@ jobs:
         working-directory: /frontend/
     steps:
       - name: Updating ng dependencies
-        uses: tinesoft/ngx-uptodate@master
+        uses: tinesoft/ngx-uptodate@v1.1.0
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           pr-branch-prefix: chore/ng-update/
