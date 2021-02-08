@@ -10,16 +10,13 @@ on:
 
 jobs:
   analyze:
-    defaults:
-      run:
-        working-directory: /frontend/
     name: Analyze
     runs-on: ubuntu-latest
 
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'javascript' ]
+        language: [ 'javascript', 'csharp' ]
 
     steps:
     - name: Checkout repository
