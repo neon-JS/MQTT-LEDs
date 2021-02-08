@@ -5,9 +5,10 @@ Monorepo that contains projects to control LEDs from a browser via MQTT.
 This project is made to control RGB-LEDs via MQTT in a browser. The LEDs are wired to an Arduino or ESP 8266 and connected via Serial or WLAN. 
 
 ## Structure
-The project is currently split into two sub-projects:
+The project is currently split into three sub-projects:
 - _arduino/_ contains the code for controlling the LEDs on an Arduino / ESP 8266 via MQTT.
 - _frontend/_ contains an Angular project for a website which connects to an MQTT broker (via Websocket) and allows us to send control-messages to the Arduino.
+- _converter/_ contains a simple .NET program that listens to MQTT and forwards all received messages to a Serial port.
 
 For more information, read the _README.md_ in the specific projects.
 
@@ -32,6 +33,9 @@ So if we're setting the LEDs in the living room to red, this will result in an M
 ### Arduino
 - [Arduino Client for MQTT ("pubsubclient")](https://pubsubclient.knolleary.net), licensed under the MIT License.
 - [FastLED Animation Library](http://fastled.io), licensed under the MIT License.
+
+## Converter (MQTT -> Serial)
+- [MQTTnet](https://github.com/chkr1011/MQTTnet), licensed under the MIT License.
 
 ## License
 Licensed under the MIT License.
