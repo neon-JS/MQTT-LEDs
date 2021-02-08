@@ -8,3 +8,11 @@ updates:
     reviewers:
       - "neon-JS"
     open-pull-requests-limit: 1
+  - package-ecosystem: "nuget"
+    directory: "/converter/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+    reviewers:
+      - "neon-JS"
+    open-pull-requests-limit: 1
