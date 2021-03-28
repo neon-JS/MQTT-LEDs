@@ -7,3 +7,4 @@ updates:
       day: "friday"
     reviewers:
       - "neon-JS"
+    open-pull-requests-limit: 1
